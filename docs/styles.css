@@ -392,3 +392,111 @@ footer {
     transform: translateY(-5px); /* Lift effect on hover */
     box-shadow: 0 4px 20px rgba(255, 165, 0, 0.5); /* Stronger shadow on hover */
 }
+
+
+
+/* Base styles remain unchanged */
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .hero h2 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .slider .item .content {
+        font-size: 4rem; 
+    }
+
+    .slider .nav .next,
+    .slider .nav .prev {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .pricing li {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 992px) {
+    .slider .item .content {
+        font-size: 3rem; 
+    }
+
+    .slider .item .content .wrap {
+        width: 70%;
+    }
+
+    .price-list {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .price-list li {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        width: 100%; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+    nav ul li {
+        text-align: center; 
+        margin: 5px 0; 
+    }
+
+    .hero {
+        padding: 50px 10px; 
+    }
+
+    .cta-button {
+        padding: 10px 20px; 
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h2 {
+        font-size: 2.5rem; 
+    }
+
+    .hero p {
+        font-size: 0.9rem; 
+    }
+
+    .slider .item .content {
+        font-size: 2rem; 
+    }
+
+    .pricing li {
+        font-size: 0.9rem; 
+    }
+
+    .slider .nav .explore-btn {
+        font-size: 0.8rem; 
+        padding: 10px; 
+    }
+}
+
+/* Specific styles for gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller grids */
+    gap: 10px; /* Space between images */
+}
